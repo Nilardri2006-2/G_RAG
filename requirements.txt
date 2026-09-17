@@ -1,0 +1,103 @@
+# =========================
+# LLM / LangChain / LangGraph
+# =========================
+langchain
+langchain-core
+langchain-community
+langchain-openai
+langchain-cohere
+langgraph
+
+# =========================
+# Vector Database
+# =========================
+qdrant-client
+
+# =========================
+# Embeddings / Reranking
+# =========================
+sentence-transformers
+transformers
+torch
+
+# =========================
+# Sparse Retrieval
+# =========================
+rank-bm25
+
+# =========================
+# Document Processing
+# =========================
+pypdf
+python-docx
+beautifulsoup4
+lxml
+
+# =========================
+# Data Validation
+# =========================
+pydantic
+pydantic-settings
+
+# =========================
+# PostgreSQL
+# =========================
+psycopg2-binary
+sqlalchemy
+
+# =========================
+# Redis
+# =========================
+redis
+
+# =========================
+# SQL Parsing / AST Validation
+# =========================
+sqlglot
+
+# =========================
+# API
+# =========================
+fastapi
+uvicorn[standard]
+
+# =========================
+# Evaluation
+# =========================
+ragas
+datasets
+
+# =========================
+# Data / Utilities
+# =========================
+numpy
+pandas
+python-dotenv
+tenacity
+
+# =========================
+# HTTP / Async
+# =========================
+httpx
+aiohttp
+
+# =========================
+# Testing
+# =========================
+pytest
+pytest-asyncio
+
+# =========================
+# Logging / Monitoring
+# =========================
+structlog
+
+# =========================
+# UI
+# =========================
+streamlit
+
+# =========================
+# Optional: visualization
+# =========================
+plotly
