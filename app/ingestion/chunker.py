@@ -14,6 +14,8 @@ def chunk_pages(pages):
         for chunk in page_chunks:
             chunks.append({
                 "text" : chunk,
-                "page" : page["page"]
+                "page" : page["page"],
+                "source": "Constitution of India",
+                "document_type": "constitution"
             })
     return chunks
