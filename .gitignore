@@ -1,2 +1,4 @@
 storage/
 .env
+venv/
+work_log.txt
