@@ -1,0 +1,44 @@
+ PS C:\Users\Nilardri\OneDrive\Server-Roney\Dev\project\G_RAG> python -m app.graph.run
+ Loadin the embedding model : sentence-transformers/all-MiniLM-L6-v2
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|█| 103/103 [00:00<00:00, 1324.4
+================================================================================
+SELF-HEALING LEGAL RAG
+================================================================================
+
+I want a complete explanation of the fundamental rights guaranteed by the Constitution of India. Explain what Articles 14, 15, 16, 19, 21, 21A, 25, 29, 30 and 32 provide, who can exercise each of these rights, what reasonable restrictions apply to them, and whether these rights are available to citizens, foreigners, companies, or all persons. Also explain whether Article 21 includes privacy, education, healthcare, clean environment, freedom of speech, and the right to travel abroad.                                                     
+
+[RETRIEVAL]
+query: I want a complete explanation of the fundamental rights guaranteed by the Constitution of India. Explain what Articles 14, 15, 16, 19, 21, 21A, 25, 29, 30 and 32 provide, who can exercise each of these rights, what reasonable restrictions apply to them, and whether these rights are available to citizens, foreigners, companies, or all persons. Also explain whether Article 21 includes privacy, education, healthcare, clean environment, freedom of speech, and the right to travel abroad.
+
+[generation]
+
+[verification]
+Supported: False
+Reason: The answer accurately reflects the limited content available in the retrieved extracts for Articles 14, 15, 19, and 32, and correctly notes that the full texts of Articles 16, 21, 21A, 25, 29, and 30 are not present. However, the answer includes an unsupported claim that any person whose fundamental right is violated can move the Supreme Court under Article 32, which is not explicitly stated in the extract. Additionally, the answer does not provide the full scope, reasonable restrictions, or detailed applicability of the missing articles, nor does it address the specific queries about Article 21's inclusion of privacy, education, healthcare, etc. These gaps mean the answer is not fully supported by the retrieved context.
+
+[SELF-HEALING]
+Rewritten query: Full text of Articles 14, 15, 16, 19, 21, 21A, 25, 29, 30, and 32 of the Constitution of India, including their reasonable restrictions and applicability to citizens, foreigners, and companies.
+
+[RETRIEVAL]
+query: Full text of Articles 14, 15, 16, 19, 21, 21A, 25, 29, 30, and 32 of the Constitution of India, including their reasonable restrictions and applicability to citizens, foreigners, and companies.
+
+[generation]
+
+[verification]
+Supported: True
+Reason: The retrieved sources only contain partial excerpts and do not include the complete text of Articles 14, 15, 16, 19, 21, 21A, 25, 29, 30, and 32, nor the detailed reasonable restrictions and applicability to citizens, foreigners, and companies. Therefore, the answer correctly states that the sources do not provide enough information.
+
+================================================================================
+FINAL ANSWER
+================================================================================
+The retrieved sources do not provide enough information to answer this question.
+
+================================================================================
+VERIFICATION
+================================================================================
+{'supported': True, 'reason': 'The retrieved sources only contain partial excerpts and do not include the complete text of Articles 14, 15, 16, 19, 21, 21A, 25, 29, 30, and 32, nor the detailed reasonable restrictions and applicability to citizens, foreigners, and companies. Therefore, the answer correctly states that the sources do not provide enough information.', 'missing_information': ['Full text of Article 14 (Equality before law) including its scope and restrictions.', 'Full text of Article 15 (Prohibition of discrimination) including its clauses and restrictions.', 'Full text of Article 16 (Equality of opportunity in public employment) including its scope and restrictions.', 'Full text of Article 19 (Protection of certain rights regarding freedom of speech, etc.) including its clauses and reasonable restrictions.', 'Full text of Article 21 (Protection of life and personal liberty) including its interpretation and applicability.', 'Full text of Article 21A (Right to education) including its provisions and applicability.', 'Full text of Article 25 (Freedom of conscience and free profession, practice and propagation of religion) including its restrictions.', 'Full text of Article 29 (Protection of minorities in educational institutions) including its scope and restrictions.', 'Full text of Article 30 (Right of minorities to establish and administer educational institutions) including its provisions and restrictions.', 'Full text of Article 32 (Right to constitutional remedies) including its scope and applicability.', 'Details on reasonable restrictions applicable to each article.', 'Clarification on applicability of each article to citizens, foreigners, and companies.'], 'rewritten_query': 'Please provide the complete text of Articles 14, 15, 16, 19, 21, 21A, 25, 29, 30, and 32 of the Constitution of India, including all clauses, reasonable restrictions, and notes on their applicability to citizens, foreigners, and companies.'}
+
+Retries: 1
+
+Legal question (type 'exit' to quit): 
